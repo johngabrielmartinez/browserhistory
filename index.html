@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>A history of browsers</title>
@@ -9,12 +16,11 @@
   <body>
     <h1>A history of browsers</h1>
 
-    <h2>Table of Contents</h2>
-    <ul>
+    <ul class="nav">
       <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#ie">A brief history of IE</a></li>
-      <li><a href="#firefox">A brief history of Firefox</a></li>
-      <li><a href="#chrome">A brief history of Chrome</a></li>
+      <li><a href="#ie">Internet Explorer</a></li>
+      <li><a href="#firefox">Firefox</a></li>
+      <li><a href="#chrome">Chrome</a></li>
     </ul>
 
     <h2 id="introduction">Introduction</h2>
@@ -27,7 +33,11 @@
       accessible to the average person. Andreesen’s browser sparked the
       internet boom of the 1990s. These are the two major milestones in the
       history of the modern
-      <a href="https://en.wikipedia.org/wiki/Web_browser" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://en.wikipedia.org/wiki/Web_browser"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         web browser
       </a>.
     </p>
@@ -42,71 +52,102 @@
       Sheets (JSSS) by W3C.
     </p>
 
-    <h2 id="ie">A brief history of IE</h2>
-    <img src="Internet_Explorer_10+11_logo.svg" alt="Internet Explorer logo" width="100" />
-    <p>
-      The first
-      <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank" rel="noopener noreferrer">
-        Internet Explorer
-      </a>
-      was derived from Spyglass Mosaic. The original Mosaic came from NCSA,
-      but since NCSA was a public entity it relied on Spyglass as its
-      commercial licensing partner. Spyglass in turn delivered two versions of
-      the Mosaic browser to Microsoft, one wholly based on the NCSA source
-      code, and another engineered from scratch but conceptually modeled on
-      the NCSA browser. Internet Explorer was initially built using the
-      Spyglass version. The license to Microsoft provided Spyglass (and thus
-      NCSA) with a quarterly fee plus a percentage of Microsoft’s revenues for
-      the software.
-    </p>
+    <div class="columns">
+      <div class="column">
+        <h2 id="ie">A brief history of IE</h2>
+        <p>
+          <img
+            class="logo"
+            src="Internet_Explorer_10+11_logo.svg"
+            alt="Internet Explorer logo"
+          />
+          The first
+          <a
+            href="https://en.wikipedia.org/wiki/Internet_Explorer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Internet Explorer
+          </a>
+          was derived from Spyglass Mosaic. The original Mosaic came from NCSA,
+          but since NCSA was a public entity it relied on Spyglass as its
+          commercial licensing partner. Spyglass in turn delivered two versions of
+          the Mosaic browser to Microsoft, one wholly based on the NCSA source
+          code, and another engineered from scratch but conceptually modeled on
+          the NCSA browser. Internet Explorer was initially built using the
+          Spyglass version. The license to Microsoft provided Spyglass (and thus
+          NCSA) with a quarterly fee plus a percentage of Microsoft’s revenues for
+          the software.
+        </p>
 
-    <p>
-      In March 2009 Version 8.0 was released, with the first public beta
-      having been released on March 5, 2008. IE8 offered better support for
-      web standards than previous versions, with improved support for RSS,
-      CSS, and Ajax, as well as compliance for Cascading Style Sheets 2.1. It
-      was also the first version to successfully pass the Acid2 test and
-      included features such as WebSlices and an improved phishing filter.
-    </p>
+        <p>
+          In March 2009 Version 8.0 was released, with the first public beta
+          having been released on March 5, 2008. IE8 offered better support for
+          web standards than previous versions, with improved support for RSS,
+          CSS, and Ajax, as well as compliance for Cascading Style Sheets 2.1. It
+          was also the first version to successfully pass the Acid2 test and
+          included features such as WebSlices and an improved phishing filter.
+        </p>
+      </div>
 
-    <h2 id="firefox">A brief history of Firefox</h2>
-    <img src="Mozilla_Firefox_logo_2013.png" alt="Firefox logo" width="100" />
-    <p>
-      The project which became
-      <a href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener noreferrer">
-        Mozilla Firefox
-      </a>
-      started as an experimental branch of the Mozilla Suite called m/b
-      (mozilla/browser). After it had been sufficiently developed, binaries
-      for public testing appeared in September 2002 under the name Phoenix.
-    </p>
+      <div class="column">
+        <h2 id="firefox">A brief history of Firefox</h2>
+        <p>
+          <img
+            class="logo"
+            src="Mozilla_Firefox_logo_2013.png"
+            alt="Firefox logo"
+          />
+          The project which became
+          <a
+            href="https://www.mozilla.org/firefox/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mozilla Firefox
+          </a>
+          started as an experimental branch of the Mozilla Suite called m/b
+          (mozilla/browser). After it had been sufficiently developed, binaries
+          for public testing appeared in September 2002 under the name Phoenix.
+        </p>
 
-    <p>
-      Firefox 23 was released on August 6, 2013. It included an updated logo,
-      mixed content blocking enabled by default to defend against
-      man-in-the-middle attacks, implementation of the range form control
-      attribute in HTML5, and a global browser console among other
-      improvements.
-    </p>
+        <p>
+          Firefox 23 was released on August 6, 2013. It included an updated logo,
+          mixed content blocking enabled by default to defend against
+          man-in-the-middle attacks, implementation of the range form control
+          attribute in HTML5, and a global browser console among other
+          improvements.
+        </p>
+      </div>
 
-    <h2 id="chrome">A brief history of Chrome</h2>
-    <img src="Google_Chrome_icon_(February_2022).svg" alt="Chrome logo" width="100" />
-    <p>
-      Google’s Eric Schmidt opposed the development of an independent browser
-      for years. After co-founders Sergey Brin and Larry Page hired several
-      Firefox developers and built a demonstration of
-      <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">
-        Google Chrome
-      </a>,
-      Schmidt admitted that the prototype was so strong it forced him to
-      change his mind.
-    </p>
+      <div class="column">
+        <h2 id="chrome">A brief history of Chrome</h2>
+        <p>
+          <img
+            class="logo"
+            src="Google_Chrome_icon_(February_2022).svg"
+            alt="Chrome logo"
+          />
+          Google’s Eric Schmidt opposed the development of an independent browser
+          for years. After co-founders Sergey Brin and Larry Page hired several
+          Firefox developers and built a demonstration of
+          <a
+            href="https://www.google.com/chrome/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Chrome
+          </a>,
+          Schmidt admitted that the prototype was so strong it forced him to
+          change his mind.
+        </p>
 
-    <p>
-      In December 2010 Google announced an official Chrome MSI package for
-      businesses, making deployment easier in enterprise environments. Chrome
-      quickly became one of the dominant browsers worldwide.
-    </p>
-
+        <p>
+          In December 2010 Google announced an official Chrome MSI package for
+          businesses, making deployment easier in enterprise environments. Chrome
+          quickly became one of the dominant browsers worldwide.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

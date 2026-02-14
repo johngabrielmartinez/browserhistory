@@ -1,0 +1,45 @@
+body {
+  margin: 10px 50px;
+  background-color: ivory;
+  color: darkblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Oswald, sans-serif;
+}
+
+/* --- Navigation bar (TOC list styled horizontally) --- */
+.nav {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- 3-column layout: IE / Firefox / Chrome --- */
+.columns {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.column {
+  width: 300px;
+}
+
+/* --- Logos inline with the text (WOD2 requirement) --- */
+.logo {
+  width: 100px;
+  float: left;
+  margin: 0 12px 6px 0;
+}
